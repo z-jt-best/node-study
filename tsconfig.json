@@ -1,0 +1,19 @@
+{
+    "extends": "@tsconfig/node16/tsconfig.json", // 使用社区配置好的 tsconfig.json 文件。这个是 noode16 版本的
+    // 这里是自定义配置
+    "compilerOptions": {
+        "baseUrl": ".",
+        "moduleResolution": "node",
+        "noUnusedParameters": true,
+        "allowJs": true,
+        "sourceMap": true,
+        "useDefineForClassFields": true,
+        "resolveJsonModule": true,
+
+        "importHelpers": true,
+        "downlevelIteration": true,
+
+        "jsx": "react"
+    },
+    "include": ["lib/**/*.ts", "lib/**/*.d.ts"]
+}
